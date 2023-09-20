@@ -1,33 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}"
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       height: {
-        '90': '40rem',
+        90: "40rem",
       },
       colors: {
-        'primary-orange': '#FAA84E',
-        'lightgrey': '#A4A4A4',
+        "primary-orange": "#FAA84E",
+        lightgrey: "#A4A4A4",
       },
       borderRadius: {
-        '4xl': '2.5rem',
+        "4xl": "2.5rem",
       },
       boxShadowColor: {
-        'primary': '#EBC9A0',
+        primary: "#EBC9A0",
       },
       boxShadow: {
-        '3xl': '10px 80px 110px 10px rgb(240, 201, 153, 0.65)',
+        "3xl": "10px 80px 110px 10px rgb(240, 201, 153, 0.65)",
       },
       backgroundImage: {
-        'gradient': 'radial-gradient(circle at left top, #F9F8E3 , #F9F9F9)',
+        gradient: "radial-gradient(circle at left top, #F9F8E3 , #F9F9F9)",
       },
       fontSize: {
+        xxs: ".65rem",
       },
     },
   },
   plugins: [],
-}
-
+};

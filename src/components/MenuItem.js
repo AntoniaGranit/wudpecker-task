@@ -83,7 +83,7 @@ const MenuItem = () => {
   const Menus = [MainLinks, WorkspaceLinks];
 
   return Menus.map((menu, menuIndex) => (
-    <div className="py-5 border-indigo-400" key={menuIndex}>
+    <div className="py-2" key={menuIndex}>
       {menu.title ? (
         <p className="text-xs text-lightgrey pb-5">
           {menu.title.toUpperCase()}
@@ -92,9 +92,12 @@ const MenuItem = () => {
       {menu.items.map((item, itemIndex) => {
         const Icon = item.icon;
         return (
-          <div key={itemIndex} className="flex h-9 gap-4">
-            <Icon className="h-5 w-5 inline-block" />
-            <p className="text-xs inline-block">{item.title}</p>
+          <div
+            key={itemIndex}
+            className="group cursor-pointer flex h-9 gap-4 transition-transform duration-500 ease-in-out hover:translate-x-2"
+          >
+            <Icon className="h-4 w-4 inline-block" />
+            <p className="text-xxs inline-block">{item.title}</p>
           </div>
         );
       })}
