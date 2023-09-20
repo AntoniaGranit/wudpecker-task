@@ -16,7 +16,7 @@ const Menu = () => {
       <nav className="flex flex-col h-full">
         <MenuItem />
         <span class="flex-grow"></span>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 cursor-pointer transition-transform duration-500 ease-in-out hover:scale-125 hover:translate-x-7">
           <PlusCircleIcon className="h-4 w-4 inline-block" />
           <p className="text-xxs inline-block">New Page</p>
         </div>
