@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         'primary-orange': '#FAA84E',
+        'lightgrey': '#A4A4A4',
       },
       borderRadius: {
         '4xl': '2.5rem',
@@ -24,7 +25,6 @@ module.exports = {
         'gradient': 'radial-gradient(circle at left top, #F9F8E3 , #F9F9F9)',
       },
       fontSize: {
-        'xl': '1.5rem', // Add a new font size utility called 'xl'
       },
     },
   },
