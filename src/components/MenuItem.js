@@ -1,6 +1,5 @@
 import {
   ArrowDownTrayIcon,
-  ChevronUpDownIcon,
   CodeBracketIcon,
   CogIcon,
   DocumentIcon,
