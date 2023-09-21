@@ -3,8 +3,8 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 const SearchBar = () => {
   return (
     <div className="flex justify-center">
-      <div className="relative w-4/5">
-        <MagnifyingGlassIcon className="absolute h-4 w-4 left-16 top-1/2 transform -translate-y-1/2 " />
+      <div className="relative w-10/12">
+        <MagnifyingGlassIcon className="absolute h-4 w-4 left-20 top-1/2 transform -translate-y-1/2 " />
         <input
           type="text"
           placeholder="Search notes"
