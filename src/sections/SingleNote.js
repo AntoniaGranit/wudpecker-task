@@ -37,9 +37,11 @@ const SingleNote = ({ selectedNote }) => {
         <div className="flex flex-col gap-4">
           <h1 className="text-2xl font-semibold">{selectedNote.title}</h1>
           {selectedNote.hashtags.length > 0 && (
-            <p className="text-sm text-darker-orange cursor-pointer">
+            <p className="text-xs text-darker-orange cursor-pointer">
               {selectedNote.hashtags.map((hashtag, hashtagIndex) => (
-                <span key={hashtagIndex}>{hashtag} </span>
+                <span className="pr-3" key={hashtagIndex}>
+                  {hashtag}{" "}
+                </span>
               ))}
             </p>
           )}
