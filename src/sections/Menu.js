@@ -1,7 +1,7 @@
 import Logo from "../assets/logo.png";
 import { ChevronUpDownIcon } from "@heroicons/react/24/outline";
 import { PlusCircleIcon } from "@heroicons/react/24/solid";
-import MenuItem from "./MenuItem";
+import MenuItem from "../components/MenuItem";
 
 const Menu = () => {
   return (

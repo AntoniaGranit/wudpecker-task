@@ -8,7 +8,10 @@ module.exports = {
       },
       colors: {
         "primary-orange": "#FAA84E",
-        lightgrey: "#A4A4A4",
+        "light-grey": "#A4A4A4",
+      },
+      borderWidth: {
+        1: "1px",
       },
       borderRadius: {
         "4xl": "2.5rem",
