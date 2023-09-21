@@ -2,6 +2,7 @@ import { useState } from "react";
 import Menu from "./sections/Menu";
 import NotesList from "./sections/NotesList";
 import SingleNote from "./sections/SingleNote";
+import SingleNoteNav from "./components/SingleNoteNav";
 import data from "./data/Notes.json";
 
 const App = () => {
@@ -25,7 +26,8 @@ const App = () => {
             onCardClick={onCardClick}
           />
         </div>
-        <div className="flex w-3/5">
+        <div className="flex flex-col w-3/5">
+          <SingleNoteNav />
           <SingleNote selectedNote={selectedNote} />
         </div>
       </div>
