@@ -28,13 +28,13 @@ const App = () => {
           />
         </div>
         <div className="flex flex-col w-3/5 relative">
-          <SingleNoteNav />
+          <SingleNoteNav selectedNote={selectedNote} />
           <SingleNote selectedNote={selectedNote} />
           <div className="flex gap-4 absolute bottom-0 right-0">
-            <div className="flex items-center justify-center bg-lightest-grey rounded-full h-10 w-10">
+            <div className="flex items-center justify-center bg-lightest-grey rounded-full h-10 w-10 cursor-pointer">
               <PlusIcon className="h-4 w-4" />
             </div>
-            <div className="flex items-center justify-center bg-lightest-grey rounded-full h-10 w-10">
+            <div className="flex items-center justify-center bg-lightest-grey rounded-full h-10 w-10 cursor-pointer">
               <p className="text-l">Aa</p>
             </div>
           </div>
