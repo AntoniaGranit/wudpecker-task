@@ -6,7 +6,7 @@ import {
 
 const SingleNoteNav = () => {
   return (
-    <div className="flex items-center justify-between w-full pb-4">
+    <div className="flex items-center justify-between w-full py-2">
       <div className="flex gap-5">
         <StarIcon className="h-4 w-4 text-gray-400 cursor-pointer" />
         <ArrowDownTrayIcon className="h-4 w-4 text-gray-400 cursor-pointer" />

@@ -4,6 +4,7 @@ import NotesList from "./sections/NotesList";
 import SingleNote from "./sections/SingleNote";
 import SingleNoteNav from "./components/SingleNoteNav";
 import data from "./data/Notes.json";
+import { PlusIcon } from "@heroicons/react/24/outline";
 
 const App = () => {
   const [selectedNote, setSelectedNote] = useState(null);
@@ -26,9 +27,17 @@ const App = () => {
             onCardClick={onCardClick}
           />
         </div>
-        <div className="flex flex-col w-3/5">
+        <div className="flex flex-col w-3/5 relative">
           <SingleNoteNav />
           <SingleNote selectedNote={selectedNote} />
+          <div className="flex gap-4 absolute bottom-0 right-0">
+            <div className="flex items-center justify-center bg-lightest-grey rounded-full h-10 w-10">
+              <PlusIcon className="h-4 w-4" />
+            </div>
+            <div className="flex items-center justify-center bg-lightest-grey rounded-full h-10 w-10">
+              <p className="text-l">Aa</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>

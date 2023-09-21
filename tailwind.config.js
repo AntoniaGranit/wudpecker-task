@@ -11,6 +11,7 @@ module.exports = {
         "darker-orange": "#EC9338",
         "light-grey": "#A4A4A4",
         "lighter-grey": "#bab8b8",
+        "lightest-grey": "#F7F7F7",
         "inactive-note": "#FAFAFA",
       },
       borderWidth: {
