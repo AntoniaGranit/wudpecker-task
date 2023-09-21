@@ -40,7 +40,7 @@ const NotesListItem = ({
                 : note.description}
             </p>
           </div>
-          <p className="text-xs">{note.added}</p>
+          <p className="text-xs">{note.added} ago</p>
         </div>
       ))}
     </div>

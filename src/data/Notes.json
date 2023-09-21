@@ -74,33 +74,33 @@
     "added": "2 days"
   },
   {
-    "title": "Mexican Tomatilla Scrambled Eggs 🌶️",
+    "title": "Mexican Tomatillo Scrambled Eggs 🌶️",
     "hashtags": ["#recipes", "#recipes/savory"],
     "description": "This is a great way to use up leftover salsa verde. If you don’t have any, you can make your own or use regular tomato salsa.",
     "subtitle": "Recipe",
     "todolist": [
       {
-        "title": "Carrots",
-        "checked": true
-      },
-      {
-        "title": "Fennel",
+        "title": "Tomatillos",
         "checked": false
       },
       {
-        "title": "Ginger",
+        "title": "Onion",
         "checked": true
       },
       {
-        "title": "Turmeric",
+        "title": "Eggs",
         "checked": true
+      },
+      {
+        "title": "Lime",
+        "checked": false
       },
       {
         "title": "Garlic",
         "checked": true
       },
       {
-        "title": "Garam Masala",
+        "title": "Cumin",
         "checked": true
       }
     ],
