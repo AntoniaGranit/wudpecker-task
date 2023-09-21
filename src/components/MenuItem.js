@@ -80,7 +80,7 @@ const MenuItem = () => {
       },
       {
         id: 8,
-        icon: CogIcon,
+        icon: HashtagIcon,
         title: "Swift",
         active: false,
       },
