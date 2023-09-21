@@ -10,7 +10,7 @@ const NotesListItem = ({
         <div
           key={index}
           className={`${
-            selectedNote === index
+            selectedNote === note
               ? "bg-primary-orange text-white"
               : "bg-inactive-note text-light-grey"
           } cursor-pointer flex flex-col justify-between p-5 rounded-2xl w-11/12 min-h-[120px]`}
@@ -21,7 +21,7 @@ const NotesListItem = ({
         >
           <p
             className={`text-xs font-semibold ${
-              selectedNote === index ? "text-white" : "text-black"
+              selectedNote === note ? "text-white" : "text-black"
             }`}
           >
             {note.title}
