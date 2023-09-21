@@ -24,16 +24,24 @@ const SingleNoteNav = ({ selectedNote }) => {
         <p className="text-xxs text-gray-400 cursor-pointer">Updates</p>
         <p className="text-xxs text-gray-400 cursor-pointer">Share</p>
         <div className="w-12 flex justify-center m-0">
-          <div className="flex -space-x-1.5 h-10 items-center">
-            {selectedNote.friends.map((friend, friendIndex) => (
-              <img
-                key={friendIndex}
-                src={friendImages[friend]}
-                alt="Friend Portrait"
-                className="w-5 h-5 rounded-full ring-1 ring-white cursor-pointer"
-              />
-            ))}
-          </div>
+          {/* If there's a selected note and it has a populated "friends" array, then render the following: */}
+          {selectedNote &&
+          selectedNote.friends &&
+          selectedNote.friends.length > 0 ? (
+            <div className="flex -space-x-1.5 h-10 items-center">
+              {selectedNote.friends.map((friend, friendIndex) => (
+                <img
+                  key={friendIndex}
+                  src={friendImages[friend]}
+                  alt="Friend Portrait"
+                  className="w-5 h-5 rounded-full ring-1 ring-white cursor-pointer"
+                />
+              ))}
+            </div>
+          ) : (
+            // If not, render an empty div (to keep the height consistent)
+            <div className="w-5 h-10"></div>
+          )}
         </div>
         <EllipsisHorizontalIcon className="h-4 w-4 cursor-pointer" />
       </div>
