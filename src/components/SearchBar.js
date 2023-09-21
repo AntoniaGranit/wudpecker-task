@@ -7,7 +7,7 @@ const SearchBar = () => {
         <MagnifyingGlassIcon className="absolute h-4 w-4 left-20 top-1/2 transform -translate-y-1/2 " />
         <input
           type="text"
-          name="searchbar"
+          name="Search bar"
           placeholder="Search notes"
           className="text-center text-xs w-full h-10 border-1 border-lightgrey rounded-3xl focus:outline-none focus:border-gray-400 focus:bg-white"
         />

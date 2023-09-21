@@ -59,6 +59,7 @@ const SingleNote = ({ selectedNote }) => {
                   {/* Added a read-only checkbox */}
                   <input
                     type="checkbox"
+                    name={item.title}
                     className="mr-2 accent-primary-orange"
                     checked={item.checked}
                     readOnly
