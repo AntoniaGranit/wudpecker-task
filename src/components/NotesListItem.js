@@ -23,7 +23,7 @@ const NotesListItem = ({
             selectedNote === note
               ? "bg-primary-orange text-white"
               : "bg-inactive-note text-light-grey"
-          } hover:bg-lighter-orange hover:transition-bg transition duration-300 ease-in-out cursor-pointer flex flex-col justify-between p-4 rounded-2xl w-11/12 min-h-[120px]`}
+          } custom-card-hover hover:bg-lighter-orange hover:text-white hover:transition-bg transition duration-300 ease-in-out cursor-pointer flex flex-col justify-between p-4 rounded-2xl w-11/12 min-h-[120px]`}
           onClick={() => {
             setSelectedNote(index);
             onCardClick(note);
