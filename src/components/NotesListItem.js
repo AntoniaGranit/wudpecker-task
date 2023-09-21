@@ -1,29 +1,47 @@
+import { useState } from "react";
 import data from "../data/Notes.json";
 
 const NotesListItem = () => {
+  const [selectedNote, setSelectedNote] = useState(null);
+
+  const handleCardClick = (index) => {
+    setSelectedNote(index);
+  };
+
   return (
-    <div className="flex flex-col items-center justify-center pt-52 gap-3 overflow-y-auto">
+    <div className="flex flex-col items-center justify-center pt-52 gap-3 overflow-y-auto no-scrollbar">
       {data.map((note, index) => (
         <div
           key={index}
-          className="bg-primary-orange cursor-pointer flex flex-col justify-between p-5 rounded-2xl w-11/12 min-h-[120px]"
+          className={`${
+            selectedNote === index
+              ? "bg-primary-orange text-white"
+              : "bg-inactive-note text-light-grey"
+          } cursor-pointer flex flex-col justify-between p-5 rounded-2xl w-11/12 min-h-[120px]`}
+          onClick={() => handleCardClick(index)}
         >
-          <p className="text-white text-xs font-bold">{note.title}</p>
+          <p
+            className={`text-xs font-semibold ${
+              selectedNote === index ? "text-white" : "text-black"
+            }`}
+          >
+            {note.title}
+          </p>
           <div>
             {note.hashtags.length > 0 && (
-              <p className="text-white text-xs">
+              <p className="text-xs">
                 {note.hashtags.map((hashtag, hashtagIndex) => (
                   <span key={hashtagIndex}>{hashtag} </span>
                 ))}
               </p>
             )}
-            <p className="text-white text-xs">
+            <p className="text-xs">
               {note.description.length > 50
                 ? note.description.slice(0, 42) + "..."
                 : note.description}
             </p>
           </div>
-          <p className="text-white text-xs">{note.added}</p>
+          <p className="text-xs">{note.added}</p>
         </div>
       ))}
     </div>
