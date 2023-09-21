@@ -8,6 +8,7 @@ module.exports = {
       },
       colors: {
         "primary-orange": "#FAA84E",
+        "darker-orange": "#EC9338",
         "light-grey": "#A4A4A4",
         "inactive-note": "#FAFAFA",
       },

@@ -5,7 +5,7 @@ import MenuItem from "../components/MenuItem";
 
 const Menu = () => {
   return (
-    <div className="flex flex-col h-full w-1/5">
+    <div className="flex flex-col w-full h-full">
       <div className="flex justify-between items-center gap-3 w-3/5 pb-4">
         <img src={Logo} alt="logo" className="h-6 w-7" />
         <div className="flex gap-1">
@@ -15,7 +15,7 @@ const Menu = () => {
       </div>
       <nav className="flex flex-col h-full">
         <MenuItem />
-        <span class="flex-grow"></span>
+        <span className="flex-grow"></span>
         <div className="flex items-center gap-4 cursor-pointer transition-transform duration-500 ease-in-out hover:scale-125 hover:translate-x-7">
           <PlusCircleIcon className="h-4 w-4 inline-block" />
           <p className="text-xxs inline-block">New Page</p>
