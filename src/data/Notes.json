@@ -5,6 +5,7 @@
     "description": "Bread flour - Instant dry yeast - Extra-virgin olive oil, banana shallots - 4 garlic cloves.",
     "subtitle": " ",
     "todolist": [],
+    "friends": [],
     "added": "1 min"
   },
   {
@@ -13,6 +14,7 @@
     "description": "Cheers to the books we've been meaning to read all these years and should probably start at some point",
     "subtitle": " ",
     "todolist": [],
+    "friends": [],
     "added": "5 min"
   },
   {
@@ -38,6 +40,7 @@
         "checked": true
       }
     ],
+    "friends": ["Man", "Woman1", "Woman2"],
     "added": "1 day"
   },
   {
@@ -71,6 +74,7 @@
         "checked": true
       }
     ],
+    "friends": ["Woman1"],
     "added": "2 days"
   },
   {
@@ -104,6 +108,7 @@
         "checked": true
       }
     ],
+    "friends": [],
     "added": "5 days"
   }
 ]
