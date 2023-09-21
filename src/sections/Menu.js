@@ -6,7 +6,7 @@ import MenuItem from "../components/MenuItem";
 const Menu = () => {
   return (
     <div className="flex flex-col h-full w-1/5">
-      <div className="flex justify-between items-center w-3/5 pb-4">
+      <div className="flex justify-between items-center gap-3 w-3/5 pb-4">
         <img src={Logo} alt="logo" className="h-6 w-7" />
         <div className="flex gap-1">
           <p className="text-sm font-semibold">Antonia</p>

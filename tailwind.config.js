@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         "primary-orange": "#FAA84E",
         "light-grey": "#A4A4A4",
+        "inactive-note": "#FAFAFA",
       },
       borderWidth: {
         1: "1px",
