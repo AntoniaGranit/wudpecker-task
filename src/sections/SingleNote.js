@@ -1,15 +1,4 @@
-import { useEffect } from "react";
-
 const SingleNote = ({ selectedNote }) => {
-  useEffect(() => {
-    if (selectedNote) {
-      console.log(
-        "This is the SingleNote component's selected note:",
-        selectedNote
-      );
-    }
-  }, [selectedNote]);
-
   if (!selectedNote) {
     return (
       <div className="flex items-center justify-center flex-col h-full w-full">
