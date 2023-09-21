@@ -32,7 +32,9 @@ const SingleNote = ({ selectedNote }) => {
     <div className="flex flex-col h-full w-full items-center">
       <div className="flex flex-col gap-8 w-10/12 h-full overflow-y-auto no-scrollbar">
         <div className="flex justify-center">
-          {imageSrc && <img className="h-[250px]" src={imageSrc} alt="Image" />}
+          {imageSrc && (
+            <img className="h-[250px]" src={imageSrc} alt="NoteVector" />
+          )}
         </div>
         <div className="flex flex-col gap-4">
           <h1 className="text-2xl font-semibold">{selectedNote.title}</h1>
