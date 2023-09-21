@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        90: "40rem",
+        90: "42rem",
       },
       colors: {
         "primary-orange": "#FAA84E",

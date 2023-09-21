@@ -15,7 +15,7 @@ const NotesListItem = ({
   };
 
   return (
-    <div className="flex flex-col items-center justify-center pt-52 gap-3 overflow-y-auto no-scrollbar">
+    <div className="flex flex-col items-center justify-center pt-44 gap-3 overflow-y-auto no-scrollbar">
       {data.map((note, index) => (
         <div
           key={index}
