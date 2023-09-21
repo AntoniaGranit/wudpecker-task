@@ -13,7 +13,7 @@ const SingleNote = ({ selectedNote }) => {
   if (!selectedNote) {
     return (
       <div className="flex items-center justify-center flex-col h-full w-full">
-        <h1 className="text-light-grey text-3xl font-semibold">
+        <h1 className="text-lighter-grey text-3xl font-semibold">
           No note selected
         </h1>
       </div>

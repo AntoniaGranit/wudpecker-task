@@ -10,6 +10,7 @@ module.exports = {
         "primary-orange": "#FAA84E",
         "darker-orange": "#EC9338",
         "light-grey": "#A4A4A4",
+        "lighter-grey": "#bab8b8",
         "inactive-note": "#FAFAFA",
       },
       borderWidth: {
