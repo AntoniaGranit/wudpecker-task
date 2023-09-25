@@ -59,6 +59,7 @@ const NotesListItem = ({
                   src={friendImages[friend]}
                   alt="Friend Portrait"
                   className="w-5 h-5 rounded-full ring-1 ring-white"
+                  loading="lazy"
                 />
               ))}
             </div>
