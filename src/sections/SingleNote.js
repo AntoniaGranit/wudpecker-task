@@ -21,12 +21,9 @@ const SingleNote = ({ selectedNote }) => {
   }
 
   // Change the note's vector depending on which hashtags are used.
-  let imageSrc = standard;
-  for (const hashtag of selectedNote.hashtags) {
-    if (hashtagImages[hashtag]) {
-      imageSrc = hashtagImages[hashtag];
-    }
-  }
+  // If no hashtags are used, use the standard vector.
+  const imageSrc =
+    selectedNote.hashtags.find((hashtag) => hashtagImages[hashtag]) || standard;
 
   return (
     <div className="flex flex-col h-full w-full items-center">
